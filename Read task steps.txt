@@ -1,0 +1,19 @@
+  
+  
+  For Run project
+  
+  1.Unzip the folder and create my_task name database
+  2.Run "php artisan migrate" cmd in project folder terminal for create table.
+  3.Run project using "php artisan serve" cmd and open project url "http://127.0.0.1:8000/store"
+  4."store" route for store csv file data in table.
+  5.After that on your browser open phpmyadmin using "http://localhost/phpmyadmin/" run replace command for remove , from sales or profit price using paricular Queries.
+  
+	  (1).UPDATE csv_data SET sales = REPLACE(`sales`,',',''); 
+	  (2).UPDATE csv_data SET gross_sales = REPLACE(`gross_sales`,',',''); 
+	  (3).UPDATE csv_data SET `cogs` = REPLACE(`cogs`,',',''); 
+	  (4).UPDATE csv_data SET `profit` = REPLACE(`profit`,',',''); 
+	  (5).UPDATE csv_data SET `product` = REPLACE(`product`,' ','');
+	  
+6.After query run in php my admin .Open your project url "http://127.0.0.1:8000"
+7.In this url show all the data ,count and graph of sales data.
+  
